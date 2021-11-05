@@ -1,4 +1,4 @@
-/* Maps */
+/* Maps in Go */
 // Similar to Dictionaries in Python or Objects on Javascript //
 // But the keys and values can be of any type, as long as all the keys are the same and the values are all the same //
 // Syntax is----> mapName := map[keysType]valuesType{...} //
