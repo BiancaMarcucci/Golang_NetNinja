@@ -1,4 +1,4 @@
-/* Loops */
+/* Loops  */
 // For in Go is used for what in other languages would be while, for and for in //
 
 package main
