@@ -1,4 +1,4 @@
-/* Arrays & Slices */
+/* Arrays & Slices  */
 // Intro to Arrays and Slices in Go //
 
 package main
