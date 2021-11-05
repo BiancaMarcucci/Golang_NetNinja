@@ -1,4 +1,5 @@
-// Booleans & Conditionals //
+/* Booleans & Conditionals */
+
 package main
 
 import "fmt"

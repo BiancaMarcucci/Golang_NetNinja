@@ -1,4 +1,4 @@
-//Package Scope//
+/*Package Scope*/
 // How to use variables and functions from different files from the same package//
 //could have used any file here, but let's use greetings.go, we will use variables and functions from it,
 // viceversa we will also define a variable (at root level, outside the main() function) in tutorial11.go and we will use it in greetings.go

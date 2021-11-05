@@ -1,4 +1,5 @@
-//Using Functions//
+/*Using Functions*/
+//Intro to functions in Go//
 package main
 
 import (

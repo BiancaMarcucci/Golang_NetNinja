@@ -1,4 +1,5 @@
-// Arrays & Slices //
+/* Arrays & Slices */
+// Intro to Arrays and Slices in Go //
 
 package main
 
@@ -6,7 +7,7 @@ import "fmt"
 
 func main() {
 
-	//ARRAYS///////////////////////////////
+	/* ARRAYS */
 
 	//Ways to declare Arrays. NB the length is declared and fixed, the type of the variables in the array is also defined.
 	var ages [3]int = [3]int{20, 25, 30}
@@ -15,7 +16,7 @@ func main() {
 	//Can also use method len() to get the length of the array
 	fmt.Println(ages, ages2, ages3, len(ages3))
 
-	//SLICES//////////////////////////////
+	/* SLICES */
 
 	// Similar to arrays, but lenght is NOT FIXED
 	var scores = []int{100, 20, 76}

@@ -1,5 +1,6 @@
-//Multiple returns values//
+/*Multiple returns values*/
 // Want a function that take a string (full name) and returns Both Initials (if present) but Capital
+
 package main
 
 import (

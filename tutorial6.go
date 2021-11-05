@@ -1,3 +1,4 @@
+/* The Standard Library */
 // Few extra packages examples, to be used with strings and slices etc//
 package main
 
@@ -9,7 +10,7 @@ import (
 )
 
 func main() {
-	//Strings///////////////////////////////////////////////
+	/* strings */
 	greetings := "hello there friends!"
 	fmt.Println(strings.Contains(greetings, "Ginger"))        // This will return false
 	fmt.Println(strings.ReplaceAll(greetings, "hello", "hi")) // this will replace all "hello" with "hi"---NB it returns a NEW STRING
@@ -22,7 +23,7 @@ func main() {
 	// Split is a method that returns a slice containing parts of the string, devided accordingly to what declared
 	fmt.Println(strings.Split(greetings, " ")) // Will split the string at every space
 
-	//Sort/////////////////////////////////////////////////
+	/* sort */
 	ages := []int{20, 25, 30, 44, 21, 12, 56, 70}
 
 	sort.Ints(ages) // This sorts a slice of integers, will permanently change the original slice

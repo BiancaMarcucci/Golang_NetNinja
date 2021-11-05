@@ -1,4 +1,4 @@
-// How to declare variables //
+/* HOW TO DECLARE VARIABLES IN GO */
 
 package main
 
@@ -6,7 +6,7 @@ import "fmt"
 
 func main() {
 
-	//////STRINGS///////////////////////////////////////////////////
+	/* STRINGS */
 	// ways to declare Strings
 	var nameOne string = "mario"
 	var nameTwo = "luigi"
@@ -23,14 +23,14 @@ func main() {
 	nameFour := "yoshi"
 	fmt.Println(nameFour)
 
-	//////Integers//////////////////////////////
+	/* INTEGERS */
 	var ageOne int = 20
 	var ageTwo = 30
 	ageThree := 40
 
 	fmt.Println(ageOne, ageTwo, ageThree)
 
-	////BITS & Memory///////////////////////////
+	/* BITS & MEMORY */
 	// you can choose how many bits the numbers will take, eg an integer that takes 8 bits is int8 (from -128 to 127)
 
 	var num8Bits int8 = 120
@@ -42,7 +42,7 @@ func main() {
 	var numUint82 uint = 21 // can go from 0 to 255
 	fmt.Println(numUint, numUint82)
 
-	///////FLOATS////////////////////////////////
+	/* FLOATS */
 	// either float32 or float64, the latter being the defgault if := is used
 
 	var scoreOne float32 = 33.33

@@ -1,5 +1,5 @@
-//For Tutorial 11 on Package Scope (could have done with any other file, as we all put them in package main)//
-// we will define variables and functions we will then use in tutorial11.go and will also use a variable from tutorial11.go
+/*For Tutorial 11 on Package Scope (could have done with any other file, as we all put them in package main)
+we will define variables and functions we will then use in tutorial11.go and will also use a variable from tutorial11.go */
 
 package main
 
