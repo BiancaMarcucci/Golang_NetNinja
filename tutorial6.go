@@ -1,4 +1,4 @@
-/* The Standard Library */
+/* The Standard Library  */
 // Few extra packages examples, to be used with strings and slices etc//
 package main
 
