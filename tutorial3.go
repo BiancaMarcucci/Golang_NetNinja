@@ -1,4 +1,4 @@
-/* HOW TO DECLARE VARIABLES IN GO */
+/* HOW TO DECLARE VARIABLES */
 
 package main
 
