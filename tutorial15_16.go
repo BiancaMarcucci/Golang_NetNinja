@@ -13,6 +13,6 @@ func main() {
 	/* Adding tip and menu items */
 
 	myBill.items = map[string]float64{"bread": 2.5, "pasta alla matriciana": 12.8, "water": 2.3}
-	myBill.tip = 3
-	fmt.Println(myBill)
+	myBill.tip = 3.0
+	fmt.Println(myBill.format())
 }
