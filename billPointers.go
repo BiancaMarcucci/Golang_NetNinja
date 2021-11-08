@@ -1,9 +1,12 @@
 /* Bill Custom Object and its receiver functions with pointers */
-// We create here a bill object that we will then use in tutorial17//
+// We create here a bill object that we will then use in tutorials 17 to 21//
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 type bill struct {
 	name  string
@@ -17,7 +20,7 @@ func newBill(name string) bill {
 	b := bill{
 		name:  name,
 		items: map[string]float64{}, // empty map by default
-		tip:   0,
+		tip:   0.0,
 	}
 	return b
 }
@@ -57,4 +60,19 @@ func (mybill *bill) updateTip(newTip float64) {
 
 func (mybill *bill) addItem(dish string, price float64) {
 	mybill.items[dish] = price
+}
+
+/*SAVING DATA TO A FILE ---- using os.WriteFile(nameFile,dataToSave, perm FileMode )
+files with perm filemode 0644, will be readable by all the user groups, but writable by the user only.
+https://stackoverflow.com/questions/18415904/what-does-mode-t-0644-mean/18415935 */
+
+/* saveBill() */
+func (mybill *bill) saveBill() {
+	data := []byte(mybill.format()) //we are saving the data as a slice of bytes, after converting to bytees the formatted bill (string)
+
+	err := os.WriteFile(mybill.name+".txt", data, 0644) // if an error occurs, it willl be saved in err
+	if err != nil {                                     // if error, panic
+		panic(err)
+	} // otherwise write file with formatted bill in it
+	fmt.Println("Bill was saved to file!")
 }

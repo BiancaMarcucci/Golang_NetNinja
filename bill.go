@@ -6,7 +6,7 @@ package main
 
 import "fmt"
 
-type bill struct {
+type bill1 struct {
 	name  string
 	items map[string]float64
 	tip   float64
@@ -14,8 +14,8 @@ type bill struct {
 
 /* Function to generate a new bill object */
 
-func newBill(name string) bill {
-	b := bill{
+func newBill1(name string) bill1 {
+	b := bill1{
 		name:  name,
 		items: map[string]float64{}, // empty map by default
 		tip:   0,
@@ -27,7 +27,7 @@ func newBill(name string) bill {
 // a function that is associated only to this custom type bill
 // function to format the bill into a string
 
-func (mybill bill) format() string {
+func (mybill bill1) format() string {
 	formattedBill := "Bill breakdown: \n"
 	var total float64 = 0 // could have just used the tip to be fair, but we can add it later, just to follow the videos.
 
